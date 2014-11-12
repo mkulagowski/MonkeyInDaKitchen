@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>427</width>
+    <height>298</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>383</width>
+    <height>298</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>383</width>
+    <height>298</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: black url(E:/bcgnd.png);
+background-position: center;
+file-icon: url(E:/image1.png);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="3">
+     <widget class="QLabel" name="app_name">
+      <property name="font">
+       <font>
+        <family>Monotype Corsiva</family>
+        <pointsize>18</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+border-image: url(E:/image2.png);
+border-left: 87,5px;
+border-right: 87,5px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Małpa w kuchni&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="3">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" rowspan="4">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="RecipiesBtn">
+        <property name="minimumSize">
+         <size>
+          <width>76</width>
+          <height>23</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background: transparent url(E:/btnPrzep.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="useIngridientBtn">
+        <property name="styleSheet">
+         <string notr="true">background: transparent url(E:/btnSkl.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addRecipeBtn">
+        <property name="styleSheet">
+         <string notr="true">background: transparent url(E:/btnDod.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="removeRecipeBtn">
+        <property name="styleSheet">
+         <string notr="true">background: transparent url(E:/btnUsu.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="aboutBtn">
+        <property name="styleSheet">
+         <string notr="true">background: transparent url(E:/btnOPr.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="1" colspan="2">
+     <widget class="QLabel" name="recipeNameLabel">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>111</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLabel" name="photoLabel">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>111</width>
+        <height>81</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QListView" name="recipeIngridients">
+      <property name="minimumSize">
+       <size>
+        <width>161</width>
+        <height>81</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: white;</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="showDropIndicator" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::NoSelection</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1" colspan="2">
+     <widget class="QTextBrowser" name="recipeTxt">
+      <property name="minimumSize">
+       <size>
+        <width>281</width>
+        <height>121</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: white;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+   <zorder>line</zorder>
+   <zorder>recipeNameLabel</zorder>
+   <zorder>photoLabel</zorder>
+   <zorder>recipeIngridients</zorder>
+   <zorder>recipeTxt</zorder>
+   <zorder>app_name</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
